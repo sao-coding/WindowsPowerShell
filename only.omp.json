@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/sao-coding/WindowsPowerShell/main/only.json",
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 2,
   "final_space": true,
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
@@ -23,7 +23,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:orange",
-          "template": " \uf74a {{ path .Path .Location }} ",
+          "template": " \uf74a {{ path .Location Location }} ",
           "properties": {
             "style": "folder"
           }
@@ -167,7 +167,7 @@
   "transient_prompt": {
     "foreground": "p:black",
     "background": "transparent",
-    "template": "<p:yellow,transparent>\ue0b6</><,p:yellow> {{ .Path }} </><p:yellow,transparent>\ue0b0</> "
+    "template": "<p:yellow,transparent>\ue0b6</><,p:yellow> {{ .Folder }} </><p:yellow,transparent>\ue0b0</> "
   },
   "secondary_prompt": {
     "foreground": "p:black",
